@@ -13,7 +13,7 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     public void createUsersTable() {
-        String sql = "CREATE TABLE users (\n" +
+        String sql = "CREATE TABLE IF NOT EXISTS users (\n" +
                 "    id INTEGER AUTO_INCREMENT PRIMARY KEY, \n" +
                 "    firstname VARCHAR(30), \n" +
                 "    lastname VARCHAR(30), \n" +
